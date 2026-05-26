@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niam – Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark: #2a2219;
+    --gold: #a07840;
+    --gold-light: #c49a5a;
+    --cream: #f4f0e8;
+    --cream-dark: #e8e2d6;
+    --text: #3a3020;
+    --text-muted: #7a6e5e;
+    --card-bg: #ffffff;
+    --border: rgba(160,120,64,0.2);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  header {
+    background: var(--dark);
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(160,120,64,0.15);
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    background: rgba(160,120,64,0.1);
+  }
+  .header-label {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .header-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: #f4f0e8;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .header-subtitle {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(244,240,232,0.6);
+    letter-spacing: 0.05em;
+  }
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  .effective-date {
+    display: inline-block;
+    background: var(--cream-dark);
+    color: var(--text-muted);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+  }
+  .policy-section {
+    background: var(--card-bg);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    padding: 24px 28px;
+    margin-bottom: 12px;
+  }
+  .policy-section h2 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .policy-section p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+  .policy-section a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+  .policy-section a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    letter-spacing: 0.05em;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-label">AI Personal Stylist</div>
+  <div class="header-title">Niam</div>
+  <div class="header-subtitle">Privacy Policy</div>
+</header>
+
+<div class="container">
+  <div class="effective-date">Effective Date: May 15, 2026</div>
+
+  <div class="policy-section">
+    <h2>Information We Collect</h2>
+    <p>Niam stores photos you upload, profile data, wardrobe items, and AI analysis results locally on your device using Core Data, synced across your devices via iCloud. We do not operate our own servers and do not collect or store your personal data on any Niam-controlled infrastructure.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>How We Use Your Photos</h2>
+    <p>Photos are sent to the Anthropic Claude API solely to generate AI styling analysis. According to Anthropic's privacy policy, photos sent via the API are not retained beyond the duration of the request and are not used for training AI models. For the most current information, please refer to Anthropic's Privacy Policy at <a href="https://anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>. No photos are stored, shared, or monetized by Niam.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Analytics</h2>
+    <p>Niam uses Firebase Analytics (Google) to collect anonymous usage data such as feature interactions and error rates. No personally identifiable information, photos, wardrobe content, or profile data is included in analytics events. This data is used solely to improve the app experience. You can opt out via your device's privacy settings.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>iCloud & Local Storage</h2>
+    <p>Your wardrobe, profiles, and looks sync across your personal devices via your iCloud account. Free trial usage counters are stored in iCloud Key-Value Storage to prevent duplicate grants after reinstallation. All data remains within your iCloud account and is subject to Apple's iCloud privacy policy.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Purchases</h2>
+    <p>All in-app purchases and subscriptions are processed exclusively by Apple via the App Store. Niam does not collect, store, or have access to your payment information.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Third-Party Services</h2>
+    <p>Niam uses the following third-party services: Anthropic Claude API for AI styling analysis; Firebase Analytics (Google) for anonymous usage statistics; Open-Meteo API for weather data (no account or personal data required). Each service receives only the minimum data necessary to function.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Data Retention & Deletion</h2>
+    <p>All your personal data is stored on your device and in your iCloud account. You can delete all data at any time by uninstalling the app. To remove iCloud data, delete it from iCloud Drive in your device settings. Anonymous analytics data is retained by Firebase according to Google's data retention policies.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Children's Privacy</h2>
+    <p>Niam is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, please contact us and we will take steps to delete it.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Your Rights</h2>
+    <p>Depending on your location, you may have rights regarding your personal data, including the right to access, correct, or delete it. Since your data is stored locally on your device and in your own iCloud account, you retain full control at all times. For analytics data, you may opt out via your device privacy settings.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Contact</h2>
+    <p>For privacy questions or requests, contact us at <a href="mailto:karabetskiy.d@gmail.com">karabetskiy.d@gmail.com</a></p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Niam &nbsp;·&nbsp; <a href="index.html">Support</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a></p>
+</footer>
+
+</body>
+</html>
