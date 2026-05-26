@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niam – Support</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark: #2a2219;
+    --gold: #a07840;
+    --gold-light: #c49a5a;
+    --cream: #f4f0e8;
+    --cream-dark: #e8e2d6;
+    --text: #3a3020;
+    --text-muted: #7a6e5e;
+    --card-bg: #ffffff;
+    --border: rgba(160,120,64,0.2);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  header {
+    background: var(--dark);
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(160,120,64,0.15);
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    background: rgba(160,120,64,0.1);
+  }
+  .header-label {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .header-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: #f4f0e8;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .header-subtitle {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(244,240,232,0.6);
+    letter-spacing: 0.05em;
+  }
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    padding: 28px;
+    margin-bottom: 16px;
+  }
+  .card-icon {
+    width: 40px; height: 40px;
+    background: var(--cream);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+  .card h3 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+  }
+  .card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .faq-item {
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    margin-bottom: 10px;
+  }
+  .faq-q {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .faq-a {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .contact-block {
+    background: var(--dark);
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-block::before {
+    content: '';
+    position: absolute;
+    top: -30px; right: -30px;
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    background: rgba(160,120,64,0.15);
+  }
+  .contact-block h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #f4f0e8;
+    margin-bottom: 10px;
+  }
+  .contact-block p {
+    font-size: 14px;
+    color: rgba(244,240,232,0.6);
+    margin-bottom: 28px;
+    line-height: 1.7;
+  }
+  .contact-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #f4f0e8;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .contact-btn:hover {
+    background: var(--gold-light);
+    transform: translateY(-1px);
+  }
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 40px 0;
+  }
+  .section-gap { margin-top: 40px; }
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    letter-spacing: 0.05em;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-label">AI Personal Stylist</div>
+  <div class="header-title">Niam</div>
+  <div class="header-subtitle">Support Center</div>
+</header>
+
+<div class="container">
+
+  <div class="section-gap">
+    <div class="section-title">How can we help?</div>
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <div class="card">
+        <div class="card-icon">✦</div>
+        <h3>Getting Started</h3>
+        <p>Learn how to set up your profile, add wardrobe items, and run your first AI analysis.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">◇</div>
+        <h3>Subscription & Billing</h3>
+        <p>Questions about Niam Pro, free trial, or managing your subscription through the App Store.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">○</div>
+        <h3>AI Analysis</h3>
+        <p>Understand how Niam evaluates clothing items and generates styling recommendations.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">□</div>
+        <h3>Privacy & Data</h3>
+        <p>How your photos and wardrobe data are stored, synced, and protected.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div>
+    <div class="section-title">Frequently Asked Questions</div>
+
+    <div class="faq-item">
+      <div class="faq-q">How does the AI analysis work?</div>
+      <div class="faq-a">When you upload or photograph a clothing item, Niam sends the image to the Anthropic Claude API. The AI evaluates how well the item suits your personal style, body profile, and existing wardrobe, then returns a detailed recommendation — usually within seconds.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Are my photos stored or shared?</div>
+      <div class="faq-a">No. Photos sent for AI analysis are processed by the Anthropic Claude API and are not retained beyond the duration of the request. Anthropic does not use your photos for training AI models. Your wardrobe data is stored locally on your device and synced via your personal iCloud account only.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What is included in the free trial?</div>
+      <div class="faq-a">New users receive 5 AI styling analyses, 3 outfit generations, and 1 wardrobe gap analysis. Trial usage is tracked via iCloud and does not reset upon reinstallation.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I cancel my Niam Pro subscription?</div>
+      <div class="faq-a">All subscriptions are managed by Apple. To cancel, go to Settings → your Apple ID → Subscriptions on your iPhone, find Niam, and select Cancel Subscription. Cancel at least 24 hours before the renewal date to avoid the next charge.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Can I use Niam for multiple family members?</div>
+      <div class="faq-a">Yes. You can create multiple profiles within the app — for yourself, a partner, or your children — and manage each person's wardrobe and style preferences separately.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I request a refund?</div>
+      <div class="faq-a">All purchases are processed by Apple. To request a refund, visit <a href="https://reportaproblem.apple.com" style="color:var(--gold);">reportaproblem.apple.com</a>. Niam does not issue refunds directly.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What is the Style Board feature?</div>
+      <div class="faq-a">Style Board lets you add photos of people whose style inspires you — actors, models, or anyone else. Niam uses these references to understand your style vision and checks new items for compatibility with it.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Does Niam work offline?</div>
+      <div class="faq-a">Browsing your wardrobe and saved looks works offline. AI analysis requires an internet connection, as it uses the Anthropic Claude API.</div>
+    </div>
+
+  </div>
+
+  <div class="contact-block">
+    <h2>Still have questions?</h2>
+    <p>We're here to help. Send us a message and we'll get back to you as soon as possible.</p>
+    <a class="contact-btn" href="mailto:karabetskiy.d@gmail.com">✦ &nbsp;Contact Support</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Niam &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a></p>
+</footer>
+
+</body>
+</html>
